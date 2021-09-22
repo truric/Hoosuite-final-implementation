@@ -17,7 +17,7 @@ class HootsuiteLocator
         // https://www.php.net/manual/en/reserved.variables.server.php
         if (!$ip)
         {
-            $ip = $_SERVER['REMOTE_ADDR'] ?? '188.251.168.194';
+            $ip = $_SERVER['REMOTE_ADDR'] ?? '179.250.125.000';
         }
 
         $result = file_get_contents(sprintf("%s?ip=%s", self::SERVICEURL, $ip));
